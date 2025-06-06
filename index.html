@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ribhay Singh | Portfolio</title>
+
+  <!-- CSS Links -->
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div data-aos="fade-right">
+      <h1><span id="typed"></span></h1>
+    </div>
+    <div data-aos="fade-left" data-aos-delay="200">
+      <p>Aspiring Data Scientist & Developer</p>
+      <a class="resume-button" href="Ribhay_Singh_Resume.pdf" target="_blank">📄 View Resume</a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <div class="about-text">
+      <p>
+        I'm an aspiring data scientist with a strong interest in machine learning, statistics, and real-world problem solving through data.
+        I enjoy working on projects that involve modeling, experimentation, and turning raw information into clear, actionable insights.
+      </p>
+    </div>
+  </section>
+
+  <section class="experience" data-aos="fade-up">
+    <h2>Experience</h2>
+  
+    <div class="experience-entry">
+      <h3>Software Engineer Intern – Initialyze</h3>
+      <p><em>June 2024 – August 2024 · San Francisco Bay Area</em></p>
+      <ul>
+        <li>Led a data ingestion project to integrate web data into Adobe Experience Platform.</li>
+        <li>Analyzed and interpreted data using MySQL and AEP tools to derive actionable insights.</li>
+        <li>Conducted a full team demo and published training notes in Basecamp to onboard future team members.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="projects" data-aos="fade-up">
+    <h2>Projects</h2>
+    <div class="project-cards">
+  
+      <!-- EchoMind -->
+      <div class="card">
+        <h3>EchoMind AI</h3>
+        <p>An AI-powered journaling tool with voice input, emotion-aware insights, and mental health reflections.</p>
+        <ul>
+          <li>Used FastAPI + Streamlit for UI and backend.</li>
+          <li>Incorporated OpenAI API for journaling and mood tracking.</li>
+        </ul>
+        <a href="#" target="_blank">View on GitHub →</a>
+      </div>
+  
+      <!-- Customer Churn -->
+      <div class="card">
+        <h3>Customer Churn Prediction (Python)</h3>
+        <ul>
+          <li>Built an ML model using Random Forest, Logistic Regression, and XGBoost.</li>
+          <li>Achieved 80% accuracy and high ROC-AUC on Telco dataset.</li>
+        </ul>
+      </div>
+  
+      <!-- Real Estate -->
+      <div class="card">
+        <h3>Real Estate Price Prediction (Python)</h3>
+        <ul>
+          <li>Used Linear Regression on real estate data to predict housing prices.</li>
+          <li>Performed EDA, handled preprocessing, achieved R² of 0.87 and RMSE of $24k.</li>
+        </ul>
+      </div>
+  
+      <!-- Happiness Report -->
+      <div class="card">
+        <h3>World Happiness Report Analysis (R & Python)</h3>
+        <ul>
+          <li>Analyzed 2019 dataset using dplyr, ggplot2, pandas, and matplotlib.</li>
+          <li>Explored economic/social factors and visualized trends with regression.</li>
+        </ul>
+      </div>
+  
+      <!-- Project Tracking App -->
+      <div class="card">
+        <h3>Project Tracker App (JavaFX, MVC)</h3>
+        <ul>
+          <li>Built a JavaFX-based tool for managing dev projects with lifecycle tracking.</li>
+          <li>Used MVC architecture to enhance modularity and reusability.</li>
+        </ul>
+      </div>
+  
+    </div>
+  </section>
+
+  <section class="skills" data-aos="fade-up">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <ul>
+        <li><strong>Languages:</strong> Python, R, SQL, Java, C++</li>
+        <li><strong>Tools:</strong> Git, GitHub, VS Code, Eclipse</li>
+        <li><strong>ML & DS:</strong> scikit-learn, pandas, NumPy, PyTorch, TensorFlow</li>
+      </ul>
+      <ul>
+        <li><strong>Visualization:</strong> Matplotlib, seaborn, Power BI, Tableau</li>
+        <li><strong>Concepts:</strong> Data structures, statistics, probability, NLP</li>
+        <li><strong>Platforms:</strong> Adobe Experience Platform</li>
+      </ul>
+    </div>
+  </section>
+  
+  <section class="contact" data-aos="fade-up">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out if you'd like to collaborate, connect, or just say hi.</p>
+    <p><a href="mailto:singhribhay@gmail.com">singhribhay@gmail.com</a></p>
+  </section>
+  
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Ribhay Singh | Contact: <a href="mailto:you@example.com">you@example.com</a></p>
+  </footer>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- Typed.js Script -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var typed = new Typed("#typed", {
+      strings: ["Hello, I'm <span class='highlight'>Ribhay</span>"],
+      typeSpeed: 60,
+      backSpeed: 40,
+      showCursor: true,
+      cursorChar: '|',
+      loop: false
+    });
+  </script>
+</body>
+</html>
